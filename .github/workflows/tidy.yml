@@ -20,7 +20,6 @@ jobs:
           --modify
           --remove-empty-fields
           --sort-fields
-          --generate-keys=[auth:lower]:[year]:[shorttitle:lower]
           bibliography.bib
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
