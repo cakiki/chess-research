@@ -1,0 +1,27 @@
+name: Tidy BibTeX
+on: push
+
+permissions:
+  contents: write
+
+jobs:
+  tidy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: >-
+          npx bibtex-tidy@1.14.0
+          --sort
+          --curly
+          --no-escape
+          --blank-lines
+          --duplicates
+          --trailing-commas
+          --modify
+          --remove-empty-fields
+          --sort-fields
+          --generate-keys=[auth:lower]:[year]:[shorttitle:lower]
+          bibliography.bib
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "style: bibtex-tidy"
