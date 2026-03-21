@@ -1,2 +1,2 @@
 # chess-research
-Interesting chess research papers
+Interesting chess research
