@@ -1,17 +1,3 @@
-@article{mcgrath:2022:acquisitionchessknowledge,
-  title         = {Acquisition of chess knowledge in AlphaZero},
-  author        = {Thomas McGrath  and Andrei Kapishnikov  and Nenad Tomašev  and Adam Pearce  and Martin Wattenberg  and Demis Hassabis  and Been Kim  and Ulrich Paquet  and Vladimir Kramnik},
-  year          = {2022},
-  journal       = {Proceedings of the National Academy of Sciences},
-  volume        = {119},
-  number        = {47},
-  pages         = {e2206625119},
-  doi           = {10.1073/pnas.2206625119},
-  url           = {https://www.pnas.org/doi/abs/10.1073/pnas.2206625119},
-  eprint        = {https://www.pnas.org/doi/pdf/10.1073/pnas.2206625119},
-  abstract      = {Seventy years ago, Alan Turing conjectured that a chess-playing machine could be built that would self-learn and continuously profit from its own experience. The AlphaZero system—a neural network-powered reinforcement learner—passed this milestone. In this paper, we ask the following questions. How did it do it? What did it learn from its experience, and how did it encode it? Did it learn anything like a human understanding of chess, in spite of having never seen a human game? Remarkably, we find many strong correspondences between human concepts and AlphaZero’s representations that emerge during training, even though none of these concepts were initially present in the network. We analyze the knowledge acquired by AlphaZero, a neural network engine that learns chess solely by playing against itself yet becomes capable of outperforming human chess players. Although the system trains without access to human games or guidance, it appears to learn concepts analogous to those used by human chess players. We provide two lines of evidence. Linear probes applied to AlphaZero’s internal state enable us to quantify when and where such concepts are represented in the network. We also describe a behavioral analysis of opening play, including qualitative commentary by a former world chess champion.},
-}
-
 @inproceedings{ganguly:2014:retrievalsimilarchess,
   title         = {Retrieval of similar chess positions},
   author        = {Ganguly, Debasis and Leveling, Johannes and Jones, Gareth J.F.},
@@ -30,6 +16,15 @@
   keywords      = {query by example, similar chess positions},
 }
 
+@unpublished{gonzalez:2016:similaritysearchingchess,
+  title         = {Similarity Searching on Chess Databases},
+  author        = {Gonzalez, Diego and Pascal, Andres and De Battista, Anabella and Herrera, Norma},
+  year          = {2016},
+  month         = {10},
+  url           = {https://www.researchgate.net/publication/336983989},
+  abstract      = {Similarity searching constitutes a field of study of great importance at the present. In this paper a distance function to search chess positions by similarity on game databases is proposed. Until now, queries on chess databases were limited to exact searches. Results of the evaluation of this new function, obtained through testing different phases of the game, are shown.},
+}
+
 @inproceedings{jhamtani:2018:learninggeneratemove,
   title         = {Learning to Generate Move-by-Move Commentary for Chess Games from Large-Scale Social Forum Data},
   author        = {Jhamtani, Harsh  and Gangal, Varun  and Hovy, Eduard  and Neubig, Graham  and Berg-Kirkpatrick, Taylor},
@@ -43,6 +38,20 @@
   url           = {https://aclanthology.org/P18-1154/},
   editor        = {Gurevych, Iryna  and Miyao, Yusuke},
   abstract      = {This paper examines the problem of generating natural language descriptions of chess games. We introduce a new large-scale chess commentary dataset and propose methods to generate commentary for individual moves in a chess game. The introduced dataset consists of more than 298K chess move-commentary pairs across 11K chess games. We highlight how this task poses unique research challenges in natural language generation: the data contain a large variety of styles of commentary and frequently depend on pragmatic context. We benchmark various baselines and propose an end-to-end trainable neural model which takes into account multiple pragmatic aspects of the game state that may be commented upon to describe a given chess move. Through a human study on predictions for a subset of the data which deals with direct move descriptions, we observe that outputs from our models are rated similar to ground truth commentary texts in terms of correctness and fluency.},
+}
+
+@article{mcgrath:2022:acquisitionchessknowledge,
+  title         = {Acquisition of chess knowledge in AlphaZero},
+  author        = {Thomas McGrath  and Andrei Kapishnikov  and Nenad Tomašev  and Adam Pearce  and Martin Wattenberg  and Demis Hassabis  and Been Kim  and Ulrich Paquet  and Vladimir Kramnik},
+  year          = {2022},
+  journal       = {Proceedings of the National Academy of Sciences},
+  volume        = {119},
+  number        = {47},
+  pages         = {e2206625119},
+  doi           = {10.1073/pnas.2206625119},
+  url           = {https://www.pnas.org/doi/abs/10.1073/pnas.2206625119},
+  eprint        = {https://www.pnas.org/doi/pdf/10.1073/pnas.2206625119},
+  abstract      = {Seventy years ago, Alan Turing conjectured that a chess-playing machine could be built that would self-learn and continuously profit from its own experience. The AlphaZero system—a neural network-powered reinforcement learner—passed this milestone. In this paper, we ask the following questions. How did it do it? What did it learn from its experience, and how did it encode it? Did it learn anything like a human understanding of chess, in spite of having never seen a human game? Remarkably, we find many strong correspondences between human concepts and AlphaZero’s representations that emerge during training, even though none of these concepts were initially present in the network. We analyze the knowledge acquired by AlphaZero, a neural network engine that learns chess solely by playing against itself yet becomes capable of outperforming human chess players. Although the system trains without access to human games or guidance, it appears to learn concepts analogous to those used by human chess players. We provide two lines of evidence. Linear probes applied to AlphaZero’s internal state enable us to quantify when and where such concepts are represented in the network. We also describe a behavioral analysis of opening play, including qualitative commentary by a former world chess champion.},
 }
 
 @misc{nie:2024:discoveringhighquality,
@@ -74,13 +83,4 @@
   pages         = {1069–1076},
   abstract      = {This paper presents NeuroChess, a program which learns to play chess from the final outcome of games. NeuroChess learns chess board evaluation functions, represented by artificial neural networks. It integrates inductive neural network learning, temporal differencing, and a variant of explanation-based learning. Performance results illustrate some of the strengths and weaknesses of this approach.},
   numpages      = {8},
-}
-
-@unpublished{inproceedings,
-author = {Gonzalez, Diego and Pascal, Andres and De Battista, Anabella and Herrera, Norma},
-year = {2016},
-month = {10},
-abstract = {Similarity searching constitutes a field of study of great importance at the present. In this paper a distance function to search chess positions by similarity on game databases is proposed. Until now, queries on chess databases were limited to exact searches. Results of the evaluation of this new function, obtained through testing different phases of the game, are shown.},
-title = {Similarity Searching on Chess Databases},
-url       = {https://www.researchgate.net/publication/336983989},
 }
